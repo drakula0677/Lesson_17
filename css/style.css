@@ -1,0 +1,762 @@
+@import "null.css";
+
+/* @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900,&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Philosopher:regular,italic,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Marck+Script:regular&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Stalinist+One:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Supermercado+One:regular&display=swap"); */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap");
+
+body {
+	font-family: "Roboto", sans-serif;
+	background-color: #f5f5f5;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+[class*="__container"] {
+	max-width: 1050px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 26px 0px 0px 0px;
+}
+.header__container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 28px;
+}
+.header__top {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 40px;
+}
+.header__link-logo img {
+	max-width: 174px;
+	max-height: 41px;
+}
+.header__items {
+	display: flex;
+	column-gap: 31px;
+}
+.header__item {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 1.57;
+	letter-spacing: 0.15px;
+	color: #ffffff;
+	padding: 0 0 0 34px;
+	max-width: 230px;
+}
+.clock {
+	background: url("../img/access_time_24.svg") 0 0 / 24px no-repeat;
+}
+.phone-number {
+	background: url("../img/phone_24px.svg") 0 0 / 24px no-repeat;
+}
+.header__button {
+	padding: 6px 30px;
+}
+.button {
+	display: inline-flex;
+	align-self: flex-start;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 2;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 7px;
+	background: #F2726F;
+	color: #FFFFFF;
+	cursor: pointer;
+	transition: all 0.4s ease 0s;
+	letter-spacing: 0.15px;
+}
+.button:hover {
+	color: #0156FF;
+	background: #fff;
+	outline: 2px solid #F2726F;
+}
+.header__nav {
+	background: #FFFFFF;
+	border-radius: 10px;
+	padding: 10px 48px 10px 40px;
+	display: flex;
+	justify-content: space-between;
+	column-gap: 50px;
+	min-height: 60px;
+	align-items: center;
+}
+/*                                          */
+.menu__list {
+	display: flex;
+	column-gap: 37px;
+	flex-wrap: wrap;
+}
+.menu__link {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.57;
+	letter-spacing: 0.15px;
+	color: #000;
+}
+.menu__link:hover {
+	text-decoration: underline;
+}
+.nav-header__icons {
+	display: flex;
+	column-gap: 22px;
+}
+.main {
+	flex-grow: 1;
+}
+.main-body {
+	padding: 280px 0px 312px 0px;
+	background: url("../img/BGImage.jpg") center / cover no-repeat;
+}
+.main-body__title {
+	max-width: 583px;
+	font-weight: 900;
+	font-size: 56px;
+	line-height: 1;
+	color: #ffffff;
+}
+.main-body__title:not(:last-child) {
+	margin-bottom: 50px;
+}
+.main-body__button {
+	padding: 12px 28px;
+}
+/*                                                                 */
+
+.sample-doggie_bottom:not(:last-child) {
+	margin: -80px 0px 210px 0px;
+}
+.sample-doggie__container {
+	background: #5D62B5;
+	border-radius: 40px;
+	padding: 100px 87px 0 87px;
+	position: relative;
+}
+.sample-doggie__container::before {
+	content: "";
+	background: url("../img/StylizeCircles.svg") 0 0 / 100% no-repeat;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 20.09%;
+	height: 325px;
+	margin: -10.85% -7.81% 0 0;
+}
+.sample-doggie__sub-title {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: #F5F5F5;
+	background: url("../img/Mark.svg") 0 -2px no-repeat;
+	padding: 0 0 0 33px;
+}
+.sample-doggie__sub-title:not(:last-child) {
+	margin-bottom: 33px;
+}
+.title {
+	max-width: 583px;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	color: #FFFFFF;
+}
+.sample-doggie__title:not(:last-child) {
+	margin-bottom: 36px;
+}
+.sample-doggie__text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+	color: #FFFFFF;
+}
+.sample-doggie__text:not(:last-child) {
+	margin-bottom: -46px;
+}
+.sample-doggie__image {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+.sample-doggie__img {
+	width: 100%;
+	max-height: 420px;
+	box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.24), 0px 16px 24px rgba(38, 38, 38, 0.2);
+	border-radius: 40px;
+	bottom: -120px;
+	position: relative;
+	z-index: 1;
+}
+.sample-doggie__image::before {
+	content: "";
+	width: 560px;
+	height: 390px;
+	background: url("../img/Blob2.svg") -34px -58px no-repeat;
+	position: absolute;
+	top: 30px;
+	left: -70px;
+	z-index: 0;
+}
+/*                               */
+
+.nemo {
+	background: #29C3BE;
+	position: relative;
+	padding: 112px 0px 176px 0px;
+	margin-bottom: 50px;
+}
+.nemo::before {
+	content: "";
+	width: 368px;
+	height: 234px;
+	position: absolute;
+	background: url("../img/Blob3.svg") 0 0 no-repeat;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.nemo::after {
+	content: "";
+	width: 20%;
+	height: 317px;
+	position: absolute;
+	background: url("../img/StylizeCircles.svg") 0 0 / 100% no-repeat;
+	left: 9px;
+	top: 160px;
+}
+.nemo__image {
+	max-width: 744px;
+	max-height: 456px;
+	width: 100%;
+	position: absolute;
+	top: 36px;
+	left: 0;
+	z-index: 5;
+}
+.nemo__title-button {
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+	z-index: 1;
+}
+.nemo__body {
+	display: flex;
+	flex-direction: column;
+	row-gap: 42px;
+	max-width: 411px;
+	position: relative;
+}
+.nemo__container::after {
+	content: "";
+	width: 100px;
+	height: 100px;
+	background: url("../img/tennis.ball.png") center no-repeat;
+	position: absolute;
+	top: 125px;
+	right: 46px;
+}
+.nemo__container::before {
+	content: "";
+	width: 622px;
+	height: 417px;
+	background: url("../img/Line1.svg") center no-repeat;
+	position: absolute;
+	top: -15px;
+	right: 50px;
+}
+.nemo__button {
+	padding: 6px 30px;
+}
+@media (max-width: 1024.98px) {
+	.sample-doggie__img {
+		width: 90%;
+		max-height: 420px;
+		box-shadow: 0px 8px 16px rgb(38 38 38 / 24%), 0px 16px 24px rgb(38 38 38 / 20%);
+		border-radius: 40px;
+		bottom: -120px;
+		position: relative;
+		z-index: 1;
+	}
+	.sample-doggie__image::before {
+		content: "";
+		width: 80%;
+		height: 407px;
+		background: url("../img/Blob2.svg") 0 0 / 100% no-repeat;
+		position: absolute;
+		top: -37px;
+		left: -50px;
+		z-index: 0;
+	}
+	.sample-doggie {
+		padding: 0px 10px 0px 10px;
+	}
+	.nemo__title {
+		font-size: 35px;
+		text-align: left;
+	}
+	.nemo__title:not(:last-child) {
+		margin: 20px 0px 140px 0px;
+	}
+	.nemo::after {
+		content: "";
+		width: 13%;
+		height: 317px;
+		position: absolute;
+		background: url("../img/StylizeCircles.svg") 0 0 / 100% no-repeat;
+		left: 7px;
+		top: 159px;
+	}
+	.nemo__image {
+		max-width: 744px;
+		max-height: 456px;
+		width: 45%;
+		position: absolute;
+		top: 190px;
+		left: -20px;
+		z-index: 5;
+	}
+	.nemo__container::before {
+		content: "";
+		width: 60%;
+		height: 417px;
+		background: url("../img/Line1.svg") 0 0 / 100% no-repeat;
+		position: absolute;
+		top: 0px;
+		right: -80px;
+	}
+	.nemo__container::after {
+		content: "";
+		width: 11%;
+		height: 100px;
+		background: url("../img/tennis.ball.png") 0 0 / 100% no-repeat;
+		position: absolute;
+		top: 245px;
+		right: 50px;
+	}
+	.nemo {
+		background: #29c3be;
+		position: relative;
+		padding: 50px 0px 58px 0px;
+		margin-bottom: 50px;
+	}
+}
+@media (max-width: 830px) {
+	.header__button {
+		display: none;
+	}
+	.sample-doggie__container {
+		padding: 50px 37px 0px 37px;
+		margin-bottom: -25px;
+	}
+	.sample-doggie__img {
+		margin-bottom: 50px;
+	}
+	.sample-doggie__image {
+		margin-bottom: 50px;
+	}
+	.sample-doggie_bottom:not(:last-child) {
+		margin: -80px 0px 160px 0px;
+	}
+	.sample-doggie__image::before {
+	top: 20px;
+	left: -65px;
+	transform: scale(0.95, 0.9);
+	}
+	.sample-doggie {
+		padding: 0px 10px 0px 10px;
+	}
+	.sample-doggie__image::before {
+		content: "";
+		width: 83%;
+		height: 407px;
+		background: url("../img/Blob2.svg") 0 0 / 100% no-repeat;
+		position: absolute;
+		top: -9px;
+		left: -65px;
+		z-index: 0;
+	}
+	.nemo__title {
+		font-size: 31px;
+		text-align: right;
+	}
+	.nemo__title:not(:last-child) {
+		margin: 35px 0px 165px 0px;
+	}
+	.nemo::after {
+		content: "";
+		width: 13%;
+		height: 317px;
+		position: absolute;
+		background: url("../img/StylizeCircles.svg") 0 0 / 100% no-repeat;
+		left: 7px;
+		top: 146px;
+	}
+	.nemo__image {
+		max-width: 744px;
+		max-height: 456px;
+		width: 50%;
+		position: absolute;
+		top: 190px;
+		left: -20px;
+		z-index: 5;
+	}
+	.nemo__container::before {
+		content: "";
+		width: 70%;
+		height: 417px;
+		background: url("../img/Line1.svg") 0 0 / 100% no-repeat;
+		position: absolute;
+		top: 0px;
+		right: -85px;
+	}
+	.nemo__container::after {
+		content: "";
+		width: 11%;
+		height: 100px;
+		background: url("../img/tennis.ball.png") 0 0 / 100% no-repeat;
+		position: absolute;
+		top: 245px;
+		right: 50px;
+	}
+	.nemo {
+		background: #29c3be;
+		position: relative;
+		padding: 50px 0px 20px 0px;
+		margin-bottom: 50px;
+	}
+}
+@media (max-width: 767.98px) {
+	.header__nav {
+		padding: 5px 23px 5px 20px;
+		min-height: 50px;
+	}
+	.menu__items {
+		column-gap: 20px;
+	}
+	.menu__link {
+		font-size: 12px;
+	}
+	.main-body {
+		padding: 200px 0px 220px 0px;
+	}
+	.main-body__title {
+		font-size: 46px;
+	}
+	.sample-doggie {
+		padding: 0px 10px 0px 10px;
+	}
+	.sample-doggie__image {
+		padding: 0px 20px;
+		margin-top: -130px;
+	}
+	.sample-doggie_bottom:not(:last-child) {
+		margin: -80px 0px 80px 0px;
+	}
+	.sample-doggie__img {
+		margin-bottom: 70px;
+	}
+	.nemo::before {
+		top: -58px;
+		left: -92px;
+		transform: scale(0.5, 0.5);
+	}
+	.nemo__title {
+		font-size: 26px;
+		text-align: right;
+	}
+	.nemo__title:not(:last-child) {
+		margin: -40px 0px 70px 0px;
+	}
+	.nemo::after {
+		content: "";
+		width: 15%;
+		height: 317px;
+		position: absolute;
+		background: url("../img/StylizeCircles.svg") 0 0 / 100% no-repeat;
+		left: 9px;
+		top: 84px;
+	}
+	.nemo__container::before {
+		display: none;
+	}
+	.nemo__image {
+		max-width: 744px;
+		max-height: 456px;
+		width: 60%;
+		position: absolute;
+		top: 182px;
+		left: -20px;
+		z-index: 5;
+	}
+	.nemo__container::after {
+		content: "";
+		width: 15%;
+		height: 100px;
+		background: url("../img/tennis.ball.png") 0 0 / 100% no-repeat;
+		position: absolute;
+		top: 220px;
+		right: 34px;
+	}
+	.nemo {
+		background: #29c3be;
+		position: relative;
+		padding: 10px 0px 0px 0px;
+		margin-bottom: 50px;
+	}
+}
+@media (max-width: 557px) {
+	.header__nav {
+		justify-content: flex-end;
+		position: relative;
+	}
+	.header__nav::before {
+		content: "";
+		background: url("../img/pngwing.png") 0 0 / 100% no-repeat;
+		width: 25px;
+		height: 25px;
+		top: 12px;
+		left: 15px;
+		position: absolute;
+	}
+	.sample-doggie_bottom:not(:last-child) {
+		margin: -80px 0px 70px 0px;
+	}
+	.sample-doggie__image::before {
+		display: none;
+	}
+	.nav-header__menu {
+		display: none;
+	}
+	.header__top {
+		flex-direction: column;
+		row-gap: 25px;
+	}
+	.item-header {
+		margin: 0 15px;
+	}
+	.main-body__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.main-body__button {
+		align-self: center;
+	}
+	.main-body {
+		padding: 230px 0px 150px 0px;
+	}
+	.main-body__title:not(:last-child) {
+		margin: 0px 0px 30px 0px;
+	}
+	.sample-doggie__container {
+		padding: 30px 15px 0px 15px;
+		margin-bottom: 40px;
+	}
+	.sample-doggie__img {
+		margin-bottom: 100px;
+	}
+	.sample-doggie__sub-title:not(:last-child) {
+		margin: 0px 0px 10px 0px;
+	}
+	.sample-doggie__title {
+		font-size: 30px;
+	}
+	.sample-doggie__title:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+	.sample-doggie__text:not(:last-child) {
+		margin: 0px 0px 25px 0px;
+	}
+	.nemo__body {
+		padding: 50px 30px;
+		max-width: 400px;
+	}
+	.nemo__title {
+		font-size: 30px;
+	}
+	.nemo__title:not(:last-child) {
+		margin: -70px 0px 119px 0px;
+	}
+	.sample-doggie {
+		padding: 0px 10px 0px 10px;
+	}
+	.nemo__container::before {
+		display: none;
+	}
+	.nemo__image {
+		max-width: 744px;
+		max-height: 456px;
+		width: 60%;
+		position: absolute;
+		top: 150px;
+		left: -20px;
+		z-index: 5;
+	}
+}
+@media (max-width: 425.98px) {
+	.header__items {
+		flex-direction: column;
+		row-gap: 10px;
+	}
+	.main-body {
+		padding: 290px 0px 150px 0px;
+	}
+	.sample-doggie {
+		padding: 0px 10px 0px 10px;
+	}
+	.nemo::after {
+		content: "";
+		width: 15%;
+		height: 317px;
+		position: absolute;
+		background: url("../img/StylizeCircles.svg") 0 0 / 100% no-repeat;
+		left: 9px;
+		top: 84px;
+	}
+	.nemo__title {
+		font-size: 26px;
+		text-align: right;
+	}
+	.nemo__title:not(:last-child) {
+		margin: -70px 0px 119px 0px;
+	}
+	.nemo__container::before {
+		display: none;
+	}
+	.nemo__image {
+		max-width: 744px;
+		max-height: 456px;
+		width: 60%;
+		position: absolute;
+		top: 160px;
+		left: -20px;
+		z-index: 5;
+	}
+	.nemo__container::after {
+		content: "";
+		width: 15%;
+		height: 100px;
+		background: url("../img/tennis.ball.png") 0 0 / 100% no-repeat;
+		position: absolute;
+		top: 190px;
+		right: 34px;
+	}
+	.nemo {
+		background: #29c3be;
+		position: relative;
+		padding: 50px 0px 0px 0px;
+		margin-bottom: 50px;
+	}
+}
+@media (max-width: 375.98px) {
+	.nemo__title:not(:last-child) {
+		margin: -70px 0px 100px 0px;
+	}
+}
+@media (max-width: 320.98px) {
+	.main-body {
+		padding: 275px 0px 150px 0px;
+	}
+	.main-body__title {
+		font-size: 26px;
+	}
+	.header__nav::before {
+		content: "";
+		background: url("../img/pngwing.png") 0 0 / 100% no-repeat;
+		width: 18px;
+		height: 18px;
+		top: 12px;
+		left: 15px;
+		position: absolute;
+	}
+	.header__nav {
+		padding: 5px 18px 5px 18px;
+		min-height: 40px;
+	}
+	.header__top {
+		row-gap: 15px;
+	}
+	.sample-doggie__container {
+		margin-bottom: 40px;
+	}
+	.sample-doggie__img {
+		margin-bottom: 90px;
+	}
+	.sample-doggie__title {
+		font-size: 26px;
+	}
+	.sample-doggie__text {
+		font-size: 14px;
+	}
+	.sample-doggie {
+		padding: 0px 10px 0px 10px;
+	}
+	.nemo__title {
+		font-size: 26px;
+		text-align: right;
+	}
+	.nemo__title:not(:last-child) {
+		margin: -40px 0px 70px 0px;
+	}
+	.nemo::before {
+		top: -59px;
+		left: -92px;
+		transform: scale(0.5, 0.5);
+		z-index: 1;
+	}
+	.nemo::after {
+		content: "";
+		width: 15%;
+		height: 317px;
+		position: absolute;
+		background: url("../img/StylizeCircles.svg") 0 0 / 100% no-repeat;
+		left: 9px;
+		top: 84px;
+	}
+	.nemo__container::before {
+		display: none;
+	}
+	.nemo__image {
+		max-width: 744px;
+		max-height: 456px;
+		width: 60%;
+		position: absolute;
+		top: 182px;
+		left: -20px;
+		z-index: 5;
+	}
+	.nemo__container::after {
+		content: "";
+		width: 15%;
+		height: 100px;
+		background: url("../img/tennis.ball.png") 0 0 / 100% no-repeat;
+		position: absolute;
+		top: 220px;
+		right: 34px;
+	}
+	.nemo {
+		background: #29c3be;
+		position: relative;
+		padding: 10px 0px 0px 0px;
+		margin-bottom: 50px;
+	}
+}
